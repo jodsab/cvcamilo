@@ -1,0 +1,32 @@
+.h2contact{
+    text-align: center;
+    margin: 20px 40px;
+    font-size: 56px;
+}
+
+.contact{
+    background-color: #1B779E;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.footersocial{
+    align-self: center;
+    justify-self: center;
+    text-align: center;
+}
+
+.footersocial p, .footersocial h2{
+    margin: 12px;
+}
+
+.footersocial img{
+    height: 40px;
+    margin: 0 40px;
+}
+
+.footersocial img:hover{
+    transform: scale(.9,.9);
+    margin: 0 40px;
+}
+

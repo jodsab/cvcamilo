@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--ESTILOS-->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navigation.css">
+    <link rel="stylesheet" href="container.css">
+    <link rel="stylesheet" href="section-grid.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="container-slider.css">
+    <!--FUENTES-->
+    <script src="https://kit.fontawesome.com/7f69681c6d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap" rel="stylesheet">
+    
+    <title>Document</title>
+</head>
+<body>
+    <button id="myBtn"></button>
+    <div class="invi_nav">
+        <ul class="invinav">
+            <li><a href="#subperf">PERFIL</a></li>
+            <li><a href="#subacerca">ACERCA DE MI</a></li>
+            <li><a href="#subconoc">CONOCIMIENTOS</a></li>
+            <li><a href="#subcontac">CONTACTO</a></li>
+        </ul>
+    </div>
+    <nav class="navigation">
+        <p class="logo">
+            TITO CAMILO
+            BOHORQUEZ QUITO
+        </p>
+        <ul class="navigation_ul">
+            <li><a href="#subperf">PERFIL</a></li>
+            <li><a href="#subacerca">ACERCA DE MI</a></li>
+            <li><a href="#subconoc">CONOCIMIENTOS</a></li>
+            <li><a href="#subcontac">CONTACTO</a></li>
+        </ul>
+        <div class="menu-btn"><i class="fas fa-bars"></i></div>
+    </nav>
+    <!--<section>
+        <ul>
+            <li>PERFIL</li>
+            <li>CONOCIMIENTOS</li>
+        </ul>
+    </section>-->
+    <div class="container">
+        <div id="subperf" class="perfil">
+            <h2>TITO CAMILO</h1>
+            <h2>BOHORQUEZ QUITO</h2>
+            <h4>Estudiante Ing. Software </h4>
+        </div>
+    </div>
+    <hr>
+    <h2 id="subacerca" class="sub h2aboutme">ACERCA DE MI</h2>
+    
+    <div class="container-slider">
+        <ul class="slider">
+            <li id="slide1"><img src="img/fotoperfil.png"><h3>Biografía</h3><p>Mi nombre es Camilo, tengo 25 años y estudio en la Universidad Nacional Mayor de San Marcos, la carrera de Ingeniería de Software. </p></li>
+            <li id="slide2"><img src="img/team.jpg"><h3>Experiencia Laboral</h3><p>Estoy listo y preparado para explotar todo mi potencial. </p></li>
+            <li id="slide3"><img src="img/autodidacta.png"><h3>Habiidades</h3><p>Siento una gran pasión por la carrera que estudio, soy autodidácta y pienso que es por eso que disfruto aprender acerca de la programación. Me entusiasma trabajar en equipo y crecer como comunidad.</p></li>
+        </ul>
+
+    </div>
+
+    <hr>
+    <div class="section-grid">
+        <h2 id="subconoc" class="sub subtitulo">CONOCIMIENTOS</h2>
+        <div class="grid-container">
+            <div class="section1"><img src="iconos/html.png"><h5>HTML</h5><div class="cajaporcentaje"><p style="width:82%" class="porcentaje">82%</p></div></div>
+            <div class="section2"><img src="iconos/css.png"><h5>CSS</h5><div class="cajaporcentaje"><p style="width:61%" class="porcentaje">61%</p></div></div>
+            <div class="section3"><img src="iconos/js.png"><h5>JAVA SCRIPT</h5><div class="cajaporcentaje"><p style="width:27%" class="porcentaje">27%</p></div></div>
+            <div class="section4"><img src="iconos/cpp.png"><h5>C++</h5><div class="cajaporcentaje"><p style="width:76%" class="porcentaje">76%</p></div></div>
+            <div class="section5"><img src="iconos/photoshop.png"><h5>PHOTOSHOP</h5><div class="cajaporcentaje"><p style="width:51%" class="porcentaje">51%</p></div></div>
+            <div class="section6"><img src="iconos/vegas pro.png"><h5>SONY VEGAS</h5><div class="cajaporcentaje"><p style="width:68%" class="porcentaje">68%</p></div></div>
+        </div>
+    </div>
+    <hr>
+    <h2 id="subcontac" class="sub h2contact">CONTACTO</h2>
+    <div class="contact">
+        <div class="footersocial">
+            <p>Redes Sociales</p>
+            <div>                
+                <a href="https://www.facebook.com/jsb.camilo/" target="_blank"><img src="iconos/fb150.png"></a>
+                <a href="https://www.instagram.com/jodsab.d2/" target="_blank"><img src="iconos/ig150.png"></a>
+                <a href="https://api.whatsapp.com/send?phone=+51949959463" target="_blank"><img src="iconos/whatsapp150.png"></a>
+            </div>
+            <h2>Tito Camilo Bohorquez Quito</h2>
+        </div>
+
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Enviame un mensaje</p>
+            <form>
+                <label for="name">Nombre: </label> <br>
+                <input tpye="text" name="name" autocomplete="name" required> <br>
+                <label for ="asunto">Asunto: </label> <br>
+                <input type="text" name="asunto"> <br>
+                <label for="correo">Correo: </label> <br>
+                <input type="correo" name="correo" autocomplete="email" required> <br> <br>
+                <textarea placeholder="Mensaje.." name="mensaje" rows="8" cols="27"></textarea> <br>
+                <input type="submit" name="enviar" required>
+            </form>
+        </div>
+    </div>
+
+    <script src="scripts.js">
+
+    </script>
+
+
+</body>
+</html>

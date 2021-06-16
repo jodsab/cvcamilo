@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Do Hyeon', sans-serif;
+    overflow-x: hidden;
+}
+
+:root{
+    --nav-color-blank: black;
+    --cont-color-blue: #33B3EB;
+    --comp-color-red: #EB173A;
+    --basic-color-white: #fff;
+    --basic-color-black: black;
+}
+
+
+hr{
+    margin: 10px;
+}
+
+#myBtn{
+    position:fixed;
+    z-index: 4;
+    bottom: 25px;
+    right: 25px;
+    width: 80px;
+    height: 80px;
+    background-image: url("iconos/msj.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: all 500ms ease-out;
+    opacity: .5;
+}
+
+#myBtn:hover{
+    transform: scale(1.3,1.3);
+    opacity: 1;
+}
+
+.invi_nav{
+    display: none;
+}
+
+
+@media screen and (max-width: 1382px) {
+    .container-slider .slider{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .section-grid .grid-container{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    #myBtn{
+        display:none;
+    }
+
+    h2.sub{
+        font-size: 45px;
+    }
+
+}
+
+@media screen and (max-width: 1000px){
+
+    .navigation ul.navigation_ul{
+        display: none;
+    }
+    .navigation i.fas{
+        display: inline-block;
+    }
+
+    .invi_nav {
+        display: block;
+        position: absolute;
+        z-index: 999999;
+        top: 56px;
+        right: 0;
+        background: rgb(47,54,64,.5);
+        height: 500px;
+        width: 50%;
+        transform: translateX(450px);
+        transition: all 1.1s ease-out;
+        position: fixed;
+    }
+
+    .invi_nav.show{
+        transform:translateX(0px);
+    }
+
+
+    .invi_nav li{
+        padding: 10px 0;
+        border-bottom: 1px solid #33B3EB;
+        margin: 0 10px;
+    }
+
+    .invi_nav a{
+        text-decoration: none;
+        color: white;
+        margin: 10px;
+    }
+    .invi_nav a:active{
+        text-decoration: underline;
+    }
+}
+
+@media screen and (max-width: 760px){
+
+    .section-grid .grid-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #myBtn{
+        display:none;
+    }
+
+
+}
